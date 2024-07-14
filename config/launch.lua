@@ -6,12 +6,12 @@ local options = {
 }
 
 if platform.is_win then
-  options.default_prog = { 'powershell' }
+  options.default_prog = { 'nu' }
   options.launch_menu = {
+    { label = 'Nushell', args = { 'nu' } },
     { label = 'PowerShell Core', args = { 'pwsh' } },
     -- { label = 'PowerShell Desktop', args = { 'powershell' } },
     -- { label = 'Command Prompt',     args = { 'cmd' } },
-    -- { label = 'Nushell',            args = { 'nu' } },
     -- {
     --    label = 'Git Bash',
     --    args = { 'bash.exe' },
