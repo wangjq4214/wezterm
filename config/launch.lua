@@ -6,10 +6,10 @@ local options = {
 }
 
 if platform.is_win then
-  options.default_prog = { 'nu' }
+  options.default_prog = { 'pwsh' }
   options.launch_menu = {
-    { label = 'Nushell', args = { 'nu' } },
     { label = 'PowerShell Core', args = { 'pwsh' } },
+    { label = 'Nushell', args = { 'nu' } },
     -- { label = 'PowerShell Desktop', args = { 'powershell' } },
     -- { label = 'Command Prompt',     args = { 'cmd' } },
     -- {
@@ -21,7 +21,7 @@ if platform.is_win then
     --    args = { 'ssh', 'kali@127.0.0.1', '-p', '10022' },
     -- },
   }
-elseif platform.is_mac then
+else
   options.default_prog = { '/bin/zsh' }
   options.launch_menu = {
     { label = 'Zsh', args = { 'zsh' } },
