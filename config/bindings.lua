@@ -27,7 +27,7 @@ return {
     { key = 't', mods = 'CTRL', action = act.SpawnTab('DefaultDomain') },
     {
       key = 'q',
-      mods = 'CTRL',
+      mods = 'LEADER',
       action = act.CloseCurrentTab({
         confirm = false,
       }),
@@ -57,7 +57,7 @@ return {
     -- Panes: close panes
     {
       key = 'w',
-      mods = 'CTRL',
+      mods = 'LEADER',
       action = act.CloseCurrentPane({
         confirm = true,
       }),
