@@ -76,10 +76,10 @@ return {
     { key = 'h', mods = 'CTRL', action = act.ActivatePaneDirection('Left') },
     { key = 'l', mods = 'CTRL', action = act.ActivatePaneDirection('Right') },
     -- Panes: Resize
-    { key = 'UpArrow', mods = 'CTRL', action = act.AdjustPaneSize({ 'Up', 5 }) },
-    { key = 'DownArrow', mods = 'CTRL', action = act.AdjustPaneSize({ 'Down', 5 }) },
-    { key = 'LeftArrow', mods = 'CTRL', action = act.AdjustPaneSize({ 'Left', 5 }) },
-    { key = 'RightArrow', mods = 'CTRL', action = act.AdjustPaneSize({ 'Right', 5 }) },
+    { key = 'UpArrow', mods = 'LEADER', action = act.AdjustPaneSize({ 'Up', 5 }) },
+    { key = 'DownArrow', mods = 'LEADER', action = act.AdjustPaneSize({ 'Down', 5 }) },
+    { key = 'LeftArrow', mods = 'LEADER', action = act.AdjustPaneSize({ 'Left', 5 }) },
+    { key = 'RightArrow', mods = 'LEADER', action = act.AdjustPaneSize({ 'Right', 5 }) },
     -- Rename tab bar
     {
       key = 'R',
