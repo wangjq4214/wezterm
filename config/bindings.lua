@@ -71,10 +71,10 @@ return {
       end),
     },
     -- Panes: navigation
-    { key = 'k', mods = 'CTRL', action = act.ActivatePaneDirection('Up') },
-    { key = 'j', mods = 'CTRL', action = act.ActivatePaneDirection('Down') },
-    { key = 'h', mods = 'CTRL', action = act.ActivatePaneDirection('Left') },
-    { key = 'l', mods = 'CTRL', action = act.ActivatePaneDirection('Right') },
+    { key = 'K', mods = 'CTRL', action = act.ActivatePaneDirection('Up') },
+    { key = 'J', mods = 'CTRL', action = act.ActivatePaneDirection('Down') },
+    { key = 'H', mods = 'CTRL', action = act.ActivatePaneDirection('Left') },
+    { key = 'L', mods = 'CTRL', action = act.ActivatePaneDirection('Right') },
     -- Panes: Resize
     { key = 'UpArrow', mods = 'LEADER', action = act.AdjustPaneSize({ 'Up', 5 }) },
     { key = 'DownArrow', mods = 'LEADER', action = act.AdjustPaneSize({ 'Down', 5 }) },
