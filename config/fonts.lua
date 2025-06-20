@@ -5,6 +5,7 @@ local font_size = platform.is_mac and 16 or 14
 
 return {
   font = wezterm.font_with_fallback({
+    'Maple Mono Normal NF CN',
     'Fira Code',
     'JetBrains Mono',
     'CaskaydiaCove Nerd Font',
