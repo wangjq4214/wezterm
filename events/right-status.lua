@@ -24,7 +24,7 @@ M.push = function(text, icon, fg, bg, separate)
   table.insert(M.cells, { Foreground = { Color = fg } })
   table.insert(M.cells, { Background = { Color = bg } })
   table.insert(M.cells, { Attribute = { Intensity = 'Bold' } })
-  table.insert(M.cells, { Text = icon .. ' ' .. text .. ' ' })
+  table.insert(M.cells, { Text = '  ' .. icon .. ' ' .. text .. '  ' })
 
   if separate then
     table.insert(M.cells, { Foreground = { Color = M.colors.separator_fg } })
@@ -37,7 +37,7 @@ end
 
 M.set_date = function()
   local date = wezterm.strftime(' %a %H:%M')
-  M.push(date, '', M.colors.date_fg, M.colors.date_bg, true)
+  M.push(date, '', M.colors.date_fg, M.colors.date_bg, false)
 end
 
 M.set_battery = function()
@@ -66,7 +66,7 @@ M.setup = function()
   wezterm.on('update-right-status', function(window, _pane)
     M.cells = {}
     M.set_date()
-    M.set_battery()
+    -- M.set_battery()
 
     window:set_right_status(wezterm.format(M.cells))
   end)
