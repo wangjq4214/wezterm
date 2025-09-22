@@ -41,15 +41,15 @@ return {
     -- Panes
     -- Panes: split panes
     {
-      key = [[\]],
-      mods = 'CTRL',
+      key = 'v',
+      mods = 'LEADER',
       action = act.SplitVertical({
         domain = 'CurrentPaneDomain',
       }),
     },
     {
-      key = [[/]],
-      mods = 'CTRL',
+      key = 'h',
+      mods = 'LEADER',
       action = act.SplitHorizontal({
         domain = 'CurrentPaneDomain',
       }),
