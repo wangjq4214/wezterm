@@ -3,10 +3,10 @@ return {
   webgpu_power_preference = 'HighPerformance',
 
   -- color scheme
-  color_scheme = 'Vs Code Dark+ (Gogh)',
+  color_scheme = 'Monokai Soda (Gogh)',
 
   -- background
-  window_background_opacity = 1,
+  window_background_opacity = 0.9,
   win32_system_backdrop = 'Acrylic',
 
   -- scrollbar
@@ -45,7 +45,6 @@ return {
   },
   window_close_confirmation = 'AlwaysPrompt',
   window_frame = {
-    active_titlebar_bg = '#090909',
     font_size = 12,
   },
 }
