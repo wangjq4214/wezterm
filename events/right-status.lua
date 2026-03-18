@@ -36,8 +36,8 @@ M.push = function(text, icon, fg, bg, separate)
 end
 
 M.set_date = function()
-  local date = wezterm.strftime(' %a %H:%M')
-  M.push(date, '', M.colors.date_fg, M.colors.date_bg, false)
+  local date = wezterm.strftime('%Y-%m-%d %a %H:%M')
+  M.push(date, ' ', M.colors.date_fg, M.colors.date_bg, false)
 end
 
 M.set_battery = function()
