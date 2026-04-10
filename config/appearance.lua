@@ -10,8 +10,8 @@ return {
   win32_system_backdrop = 'Acrylic',
 
   -- scrollbar
-  -- enable_scroll_bar = true,
-  -- min_scroll_bar_height = '3cell',
+  enable_scroll_bar = true,
+  min_scroll_bar_height = '3cell',
   -- colors = {
   --   scrollbar_thumb = '#454545',
   -- },
