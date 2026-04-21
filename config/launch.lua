@@ -9,8 +9,10 @@ if platform.is_win then
   options.default_prog = { 'powershell' }
   options.launch_menu = {
     { label = 'PowerShell Core', args = { 'powershell' } },
-    { label = 'Nushell', args = { 'nu' } },
-    -- { label = 'PowerShell Desktop', args = { 'powershell' } },
+    {
+      label = 'UCRT64 MSYS2',
+      args = { 'C:/msys64/msys2_shell.cmd', '-defterm', '-here', '-no-start', '-ucrt64' },
+    },
     -- { label = 'Command Prompt',     args = { 'cmd' } },
     -- {
     --    label = 'Git Bash',
@@ -26,7 +28,6 @@ else
   options.launch_menu = {
     { label = 'Zsh', args = { 'zsh' } },
     { label = 'Bash', args = { 'bash' } },
-    { label = 'Nushell', args = { '/opt/homebrew/bin/nu' } },
   }
 end
 
